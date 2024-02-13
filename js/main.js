@@ -3,8 +3,8 @@
 
 var gBallSize = 100
 
-function onBallClick(btn){
-    const maxDiameter = btn.dataset.size
+function onBallClick(ball){
+    const maxDiameter = ball.dataset.size
     
     if(gBallSize<maxDiameter){
     gBallSize +=getRandomInt(20,60)
@@ -12,10 +12,17 @@ function onBallClick(btn){
 
     var innerText=gBallSize
 
-    btn.style.width = gBallSize+'px'
-    btn.style.height = gBallSize+'px'
-    btn.style.backgroundColor = getRandomColor()
+    ball.style.width = gBallSize+'px'
+    ball.style.height = gBallSize+'px'
+    ball.style.backgroundColor = getRandomColor()
     
-    btn.innerText=innerText
+    ball.innerText=innerText
 
+}
+
+function onBallClick2(ball){
+const elBall1 = document.querySelector('div.ball')
+const elBall2 = document.querySelector('div.ball2')
+onBallClick(elBall1)
+onBallClick(elBall2)
 }
