@@ -12,6 +12,7 @@ function onBallClick(btn){
 
     btn.style.width = gBallSize+'px'
     btn.style.height = gBallSize+'px'
+    btn.style.backgroundColor = getRandomColor()
     
     btn.innerText=innerText
 
