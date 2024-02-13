@@ -5,7 +5,7 @@ var gBallSize = 100
 
 function onBallClick(btn){
     if(gBallSize<400){
-    gBallSize +=50
+    gBallSize +=getRandomInt(20,60)
     }else gBallSize = 100
 
     var innerText=gBallSize
