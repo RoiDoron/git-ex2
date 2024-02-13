@@ -4,7 +4,9 @@
 var gBallSize = 100
 
 function onBallClick(btn){
-    if(gBallSize<400){
+    const maxDiameter = btn.dataset.size
+    
+    if(gBallSize<maxDiameter){
     gBallSize +=getRandomInt(20,60)
     }else gBallSize = 100
 
