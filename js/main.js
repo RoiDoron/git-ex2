@@ -19,15 +19,15 @@ function onBallClick(ball) {
 
 }
 
-function onBallClick2(ball) {
+function onBallClick2() {
     const elBall1 = document.querySelector('div.ball')
     const elBall2 = document.querySelector('div.ball2')
-    
+
     onBallClick(elBall1)
     onBallClick(elBall2)
 }
 
-function onBallClick3(ball) {
+function onBallClick3() {
     const elBall1 = document.querySelector('div.ball')
     const elBall2 = document.querySelector('div.ball2')
 
@@ -47,5 +47,12 @@ function BallShrink(ball) {
     ball.style.height = gBallSize + 'px'
 
     ball.innerText = gBallSize
+
+}
+
+function onBallClick4(){
+    const color = getRandomColor()
+    const elBody = document.querySelector('body')
+    elBody.style.backgroundColor = color
 
 }
